@@ -1,8 +1,12 @@
 from flask import *
+import os,json
+from dotenv import load_dotenv
 
+load_dotenv(dotenv_path=os.path.expanduser("C:/Users/Hp/Documents/GitHub/updesh_secrets/.env"))
 
+firebase_key = os.getenv('FIREBASE_CREDENTIALS')
 
-import pyrebase
+print("\nkey : ",firebase_key)
 
 app = Flask(__name__)
 
