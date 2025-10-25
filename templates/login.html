@@ -45,14 +45,14 @@
 
         <script>
 
-            function opennav() {
-                if (nav.style.left == "-100%") {
-                    nav.style.left = "0%";
-                }
-                else {
-                    nav.style.left = "-100%";
-                }
+        function opennav() {
+            if (nav.style.left == "-100%" || nav.style.left == "") {
+                nav.style.left = "0%";
             }
+            else {
+                nav.style.left = "-100%";
+            }
+        }
 
         </script>
 
