@@ -17,7 +17,7 @@
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#">Messages</a></li>
-            <li><a href="#"><button>Post work</button></a></li>
+            <li><a href="#" id="postwrkbtn" ><button>Post work</button></a></li>
             <li><a href="/login"><button style="background: red;" >Log out</button></a></li>
 
         </ul>
@@ -51,7 +51,8 @@
                 <p>Need to get my car washed and shined. contact asap.</p>
                 <br>
                 <button>Apply</button>
-            </div>            <div class="job">
+            </div>           
+             <div class="job">
                 <h2>भंडारे के लिए हलवाई</h2>
                 <br>
                 <h4>Rs. 1001</h4>
@@ -70,13 +71,13 @@
 
 
     <div id="postbox">
-        <button id="closebtn" >x</button>
+        <button id="closebtn" onclick="close()" >x</button>
         <h1>Details about the work</h1>
 
         <input id="title" type="text" placeholder="Enter Job title " ><br>
         <input id="wage"  type="number" placeholder="Enter Wage" ><br>
         <input id="desc" type="text" placeholder="Enter Job description" ><br>
-        <button id="postbtn" >Post</button>
+        <button id="postbtn" onclick="post()" >Post</button>
     </div>
 
 
@@ -97,6 +98,27 @@
             wage = document.querySelector("#wage").value;
             desc = document.querySelector("#desc").value;
 
+            parentdiv = document.querySelector("#joblist");
+
+            newdiv = document.createElement("div");
+
+            newdiv.innerHTML = "<h2>" + title + "</h2><br><h4>Rs. "+ wage +"</h4><br><p>"+desc+" </p><br><button>Apply</button>"
+
+            parentdiv.prepend(newdiv);
+            console.log(title , wage , desc)
+
+        }
+
+        window.onload = function(){
+            document.querySelector("#postbox").style.display = "none";
+
+            document.querySelector("#closebtn").addEventListener('click' , () => {
+                document.querySelector("#postbox").style.display = "none";
+            })
+
+            document.querySelector("#postwrkbtn").addEventListener('click' , () => {
+                document.querySelector("#postbox").style.display = "block";
+            })
         }
 
     </script>
