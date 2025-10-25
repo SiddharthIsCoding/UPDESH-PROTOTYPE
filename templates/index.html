@@ -1,25 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./static/style.css">
 </head>
+
 <body>
 
-    <nav>
+    <button id="navopenbtn" onclick="opennav()">|||</button>
+
+    <nav id="nav">
         <img src="static/logo1.png" alt="logo" />
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="/login">Home</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Find Work</a></li>
+            <li><a href="#">Log out</a></li>
+
         </ul>
     </nav>
 
 
-    
+    <div id="header">
+
+    </div>
+
+
+    <div id="jobs">
+        <h1>Jobs</h1>
+        <div id="joblist">
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+            <div class="job">
+                <h2>Job Title</h2>
+                <p>Job Description</p>
+                <a href="#">Apply</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function opennav() {
+            if (nav.style.left == "-100%") {
+                nav.style.left = "0%";
+            }
+            else {
+                nav.style.left = "-100%";
+            }
+        }
+
+    </script>
+
+
+
 
 </body>
+
 </html>
