@@ -106,6 +106,8 @@
 
             parentdiv.prepend(newdiv);
             console.log(title , wage , desc)
+            document.querySelector("#postbox").style.display = "none";
+
 
         }
 
@@ -118,6 +120,7 @@
 
             document.querySelector("#postwrkbtn").addEventListener('click' , () => {
                 document.querySelector("#postbox").style.display = "block";
+                
             })
         }
 

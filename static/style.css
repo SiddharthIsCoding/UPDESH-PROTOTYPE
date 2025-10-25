@@ -113,6 +113,7 @@ nav>img {
     width: 98%;
     min-height: 60vh;
     margin-left: auto;
+    border-radius: 10px;
     margin-right: auto;
     margin-top: 30vh;
     background: white;
