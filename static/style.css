@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 *
 {
@@ -45,6 +47,7 @@ nav > ul > li > a
     text-decoration: none;
     text-align: center;
     padding: 10px;
+    font-family: "PT Serif", serif;
     color: black;
     font-size: 20px;
 }
